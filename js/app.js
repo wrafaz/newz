@@ -19140,6 +19140,10 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _headerApp = require('./components/headerApp.js');
+
+var _headerApp2 = _interopRequireDefault(_headerApp);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -19170,14 +19174,66 @@ var App = function (_Component) {
                 'div',
                 null,
                 _react2.default.createElement(
-                    'h1',
-                    null,
-                    this.state.mensajeTitulo
+                    'div',
+                    { className: 'sideContainer' },
+                    _react2.default.createElement(
+                        'header',
+                        { className: 'headerSide' },
+                        'Header Menu'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'sideMenu' },
+                        _react2.default.createElement(
+                            'ul',
+                            null,
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Opcion 1'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Opcion 2'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Opcion 3'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Opcion 4'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Opcion 5'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'footer',
+                        { className: 'footerSide' },
+                        'Footer Side'
+                    )
                 ),
                 _react2.default.createElement(
-                    'h2',
-                    null,
-                    this.state.subTitulo
+                    'div',
+                    { className: 'mainContainer' },
+                    _react2.default.createElement(_headerApp2.default, null),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'mainContent' },
+                        'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno est\xE1ndar de las industrias desde el a\xF1o 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido us\xF3 una galer\xEDa de textos y los mezcl\xF3 de tal manera que logr\xF3 hacer un libro de textos especimen. No s\xF3lo sobrevivi\xF3 500 a\xF1os, sino que tambien ingres\xF3 como texto de relleno en documentos electr\xF3nicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creaci\xF3n de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y m\xE1s recientemente con software de autoedici\xF3n, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.'
+                    ),
+                    _react2.default.createElement(
+                        'footer',
+                        { className: 'footerApp' },
+                        'Footer'
+                    )
                 )
             );
         }
@@ -19186,7 +19242,65 @@ var App = function (_Component) {
     return App;
 }(_react.Component);
 
-var app = document.getElementById('app');
-_reactDom2.default.render(_react2.default.createElement(App, null), app);
+_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('app'));
+
+},{"./components/headerApp.js":160,"react":158,"react-dom":29}],160:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = require('react-dom');
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var HeaderApp = function (_Component) {
+    _inherits(HeaderApp, _Component);
+
+    function HeaderApp() {
+        _classCallCheck(this, HeaderApp);
+
+        var _this = _possibleConstructorReturn(this, (HeaderApp.__proto__ || Object.getPrototypeOf(HeaderApp)).call(this));
+
+        _this.state = {
+            title: "NEWZ"
+        };
+        return _this;
+    }
+
+    _createClass(HeaderApp, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'header',
+                { className: 'headerApp' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'title' },
+                    this.state.title
+                )
+            );
+        }
+    }]);
+
+    return HeaderApp;
+}(_react.Component);
+
+exports.default = HeaderApp;
 
 },{"react":158,"react-dom":29}]},{},[159]);

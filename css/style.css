@@ -1,0 +1,82 @@
+body {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+.mainContainer {
+    position: fixed;
+    float: left;   
+    top: 0px;
+    bottom: 0px;
+    left: 200px;
+    width: auto;
+    background-color: #DDDDDD;
+}
+
+.headerApp {
+    background-color: #BBBBBB;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 0px;
+}
+
+.footerApp {
+    position: fixed;
+    bottom: 0px;
+    background-color: #BBBBBB;
+    height: 30px;
+    width: 100%;
+}
+
+.mainContent {
+    position: fixed;
+    left:200px;
+    width:auto;
+    top:50px;
+    bottom:30px;
+    padding: 10px;;
+}
+
+.sideContainer {
+    position: fixed;
+    float: left;
+    left:0px;
+    top: 0px;
+    bottom: 0px;
+    width: 200px;
+    background-color: #888888;
+}
+
+.sideMenu {
+    position: fixed;
+    top:50px;
+    bottom:50px;
+    left:0px;
+    width: 200px;
+    background-color: #444444;
+    color: white;
+    font-size: 1.2em;
+}
+
+.headerSide {
+    background-color: #BBBBBB;
+    position: fixed;
+    height: 50px;
+    width: 200px;
+    top: 0px;
+}
+
+.footerSide {
+    position: fixed;
+    bottom: 0px;
+    background-color: #BBBBBB;
+    height: 50px;
+    width: 200px;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+}
