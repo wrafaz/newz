@@ -11,7 +11,12 @@ let mainWindow
 
 function createWindow()
 {
-    mainWindow = new BrowserWindow({width: 1200, height:800})
+    mainWindow = new BrowserWindow({
+        width: 1200, 
+        height:800,
+        frame: true,
+        titleBarStyle: "hidden"
+    });
 
     mainWindow.loadURL(url.format({
         pathname: path.join(__dirname, 'index.html'),
@@ -19,7 +24,10 @@ function createWindow()
         slashes: true
     }))
 
-    mainWindow.webContents.openDevTools()
+    //mainWindow.setFullScreen(true);
+    mainWindow.maximize(true);
+
+    //mainWindow.webContents.openDevTools()
 
     mainWindow.on('closed', function(){
         mainWindow = null;
