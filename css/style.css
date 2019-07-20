@@ -10,6 +10,7 @@ body {
     top: 0px;
     bottom: 0px;
     left: 200px;
+    left: 0px;
     width: auto;
     background-color: #DDDDDD;
 }
@@ -33,6 +34,7 @@ body {
 .mainContent {
     position: fixed;
     left:200px;
+    left:0px;
     width:auto;
     top:50px;
     bottom:30px;
@@ -91,4 +93,8 @@ body {
 
 .subTitle {
     font-size: 1.2em;
+}
+
+.CategoryItem {
+    list-style: none;
 }

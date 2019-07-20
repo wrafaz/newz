@@ -9,7 +9,11 @@ class ListCategories extends Component {
         this.State = {
             title: "Categorías",
             categories: [
-                { name: 'General', color: '#0000FF'}
+                { name: 'Cat Azul', color: '#5E7193'},
+                { name: 'Cat Roja', color: '#BD3B3B'},
+                { name: 'Cat Verde', color: '#7BA770'},
+                { name: 'Cat Amarilla', color: '#FDF155'},
+                { name: 'Cat Morada', color: '#A838A3'}
             ]
         }
     };
@@ -18,11 +22,13 @@ class ListCategories extends Component {
         return (
             <div className="sideMenu">
                 <div className="title subTitle">{this.State.title}</div>
-                <ul>
-                    <li><Category title="General" color="#0000FF" /></li>
-                    <li><Category title="Cat Roja" color="#FF0000" /></li>
-                    <li><Category title="Cat Verde" color="#00FF00" /></li>
-                    <li><Category title="Cat Blanca" color="#FFFFFF" /></li>
+                <ul style={{padding:"5px"}}>
+                    {
+                        this.State.categories.map(category =>
+                        {
+                            return <li className="CategoryItem"><Category title={category.name} color={category.color} /></li>
+                        })
+                    }
                 </ul>
             </div>
         );

@@ -27,7 +27,8 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-loading": "0.1.4",
-    "react-soundplayer": "^0.3.6"
+    "react-soundplayer": "^0.3.6",
+    "yarn": "^1.17.3"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1",
