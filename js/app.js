@@ -21308,6 +21308,7 @@ var App = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
+                _react2.default.createElement(_containerSide2.default, null),
                 _react2.default.createElement(_mainContainer2.default, null)
             );
         }
@@ -21364,10 +21365,10 @@ var Category = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement('div', { style: { display: "inline-block", backgroundColor: this.State.color, width: 12, height: 12, borderRadius: 2, verticalAlign: "middle" } }),
+                _react2.default.createElement('div', { style: { display: "inline-block", backgroundColor: this.State.color, width: 20, height: 20 } }),
                 _react2.default.createElement(
                     'div',
-                    { style: { display: "inline-block", marginLeft: "5px" } },
+                    { style: { display: "inline-block" } },
                     this.State.title
                 )
             );
