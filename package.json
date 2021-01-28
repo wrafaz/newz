@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/wrafaz/newz#readme",
   "dependencies": {
-    "electron": "^1.6.11",
+    "electron": "^9.4.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-loading": "0.1.4",
